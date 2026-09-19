@@ -1,0 +1,146 @@
+{
+  "form": "expert-fix-questions",
+  "version": 1,
+  "filled": 31,
+  "total": 32,
+  "answers": {
+    "block1": {
+      "session": {
+        "question": "Когда сможешь дать 40 минут на доступы?",
+        "answer": null
+      },
+      "whatsapp_number": {
+        "question": "WhatsApp Business — на твой номер или отдельный?",
+        "answer": "Отдельный номер"
+      },
+      "handyman_rate": {
+        "question": "Handyman — сколько в час и минимум сколько часов?",
+        "answer": "€50/hour, minimum 2 hours"
+      },
+      "bathroom_from": {
+        "question": "Ванная под ключ — от какой суммы берёшься?",
+        "answer": "From €6,500"
+      },
+      "emergency": {
+        "question": "Аварийные вызовы берёшь?",
+        "answer": "Да"
+      },
+      "gbp_verified": {
+        "question": "Метка в Гугле подтверждённая?",
+        "answer": "Не знаю"
+      }
+    },
+    "block2_pricing": {
+      "kitchen_fitting": {
+        "question": "Кухня, только установка",
+        "answer": "From €2,500"
+      },
+      "kitchen_full": {
+        "question": "Кухня под ключ",
+        "answer": "From €10,000"
+      },
+      "painting_room": {
+        "question": "Покраска комнаты",
+        "answer": "From €250"
+      },
+      "painting_exterior": {
+        "question": "Покраска фасада",
+        "answer": "From €2,500"
+      },
+      "flooring": {
+        "question": "Полы",
+        "answer": "From €25/m labour only"
+      },
+      "plastering": {
+        "question": "Штукатурка",
+        "answer": "From €150 for small repairs"
+      },
+      "carpentry": {
+        "question": "Столярка — шкафы, полки",
+        "answer": "From €850"
+      },
+      "deposit": {
+        "question": "Депозит — сколько процентов и когда берёшь?",
+        "answer": "30% before start"
+      },
+      "discount_rights": {
+        "question": "Скидку могу давать сам или всегда спрашивать?",
+        "answer": "Всегда спрашивать"
+      },
+      "not_taking": {
+        "question": "Что НЕ берёшь вообще?",
+        "answer": "Gas work, certified electrical work"
+      },
+      "travel_radius": {
+        "question": "Как далеко ездишь?",
+        "answer": "All ireland"
+      },
+      "current_load": {
+        "question": "На сколько недель вперёд ты сейчас загружен?",
+        "answer": "Ready to woek"
+      },
+      "monthly_capacity": {
+        "question": "Сколько заявок в месяц реально потянешь?",
+        "answer": "From 5"
+      }
+    },
+    "block3_trust": {
+      "founded_year": {
+        "question": "В каком году начал?",
+        "answer": "2025"
+      },
+      "insurance": {
+        "question": "Страховка — компания и номер полиса",
+        "answer": "No insuranse"
+      },
+      "cro_vat": {
+        "question": "Есть CRO / VAT номер?",
+        "answer": "No"
+      },
+      "warranty": {
+        "question": "Гарантию на работы даёшь? Сколько?",
+        "answer": "six months"
+      },
+      "team_size": {
+        "question": "Работаешь один или есть бригада?",
+        "answer": "Only I , but if need i can take lads for help"
+      },
+      "websites": {
+        "question": "Сколько всего сайтов?",
+        "answer": "Expertfixservices.com"
+      },
+      "past_clients": {
+        "question": "Можешь скинуть контакты прошлых клиентов?",
+        "answer": "Нет"
+      }
+    },
+    "block4_ads": {
+      "close_rate": {
+        "question": "Из 10 заявок сколько доходит до реальной работы?",
+        "answer": "I dont know"
+      },
+      "best_service": {
+        "question": "Какая услуга тебе выгоднее всего?",
+        "answer": "Plasters, small handyman work , painting"
+      },
+      "want_more_less": {
+        "question": "Что хочешь получать чаще, а что меньше?",
+        "answer": "Small handyman work"
+      },
+      "ad_budget": {
+        "question": "Сколько в месяц готов давать на рекламу?",
+        "answer": "150-300"
+      },
+      "virtual_card": {
+        "question": "Сможешь сделать виртуальную карту в Revolut с лимитом?",
+        "answer": "Да"
+      }
+    },
+    "photos": {
+      "photos": {
+        "question": "Что можешь скинуть?",
+        "answer": "I have many photos"
+      }
+    }
+  }
+}

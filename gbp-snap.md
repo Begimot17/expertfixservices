@@ -1,0 +1,789 @@
+> # ⚠️ НЕ ДОКУМЕНТ (12.09.2026)
+>
+> Сырой дамп страницы Google, снятый браузером 12.09 при первом входе в профиль:
+> 779 строк служебных идентификаторов на русском интерфейсе. Читать его незачем —
+> внутри есть старый номер и прочее состояние профиля **до** правок.
+>
+> Что реально было найдено и исправлено в профиле — в `audit/live-surfaces.md` §1.
+---
+
+- generic [ref=f13e1]:
+  - link [ref=f13e1124] [cursor=pointer]: Перейти к основному контенту
+  - link [ref=f13e1125] [cursor=pointer]:
+    - /url: https://support.google.com/websearch/answer/181196?hl=ru-UA
+    - text: Справка по использованию специальных возможностей
+  - generic [ref=f13e8]:
+    - search [ref=f13e9]:
+      - generic [ref=f13e11]:
+        - link [ref=f13e1126] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=ru&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQPHoECAYQBA
+        - generic [ref=f13e16]:
+          - generic [ref=f13e17]:
+            - combobox [ref=f13e1127]: Carlow / Leinster Handyman Services Carlow / Leinster Handyman Services
+            - generic [ref=f13e21]:
+              - button [ref=f13e1128] [cursor=pointer]
+              - generic [ref=f13e28]:
+                - button [ref=f13e1129] [cursor=pointer]
+                - button [ref=f13e1130] [cursor=pointer]
+                - button [ref=f13e1131] [cursor=pointer]
+          - button [ref=f13e1132] [cursor=pointer]
+    - generic [ref=f13e44]:
+      - button [ref=f13e1133] [cursor=pointer]
+      - generic [ref=f13e51]:
+        - button [ref=f13e1134] [cursor=pointer]
+        - button [ref=f13e1135] [cursor=pointer]
+  - generic [ref=f13e61]:
+    - navigation [ref=f13e67]:
+      - generic [ref=f13e73]:
+        - list [ref=f13e74]:
+          - listitem [ref=f13e75]:
+            - link [disabled] [ref=f13e1136]:
+              - generic [ref=f13e77]: Все
+          - listitem [ref=f13e79]:
+            - link [ref=f13e1137] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&udm=2&fbs=ABfTbFVv2w2iSESTvmwEpLKOzozoJ0HaMXYoTYYEdFOtDfJk9xqXiUf4j3lkfillYg6yoQgtVURp6-M5aUEHGGVyot69TJqKLdpzH7q9RDiuo3Wy4f9ExCdVuW0e_LlxZ5dt7qO7dDliyaskAgF4szN1jnDJcVfBKKqHm3VNARRjPT-LwadYKxaJHaTqNS2JsppsUcgZPiQqzO4iyJh5vspouX497HnSArKe_ramXbbb8QuC7FylpDd1IQcHc1VJk3-jEzB06KY6TIHY9KHfXqyxL9jMDwB9eQ&q=Carlow+/+Leinster+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQtKgLegQIEhAB
+              - generic [ref=f13e81]: Картинки
+          - listitem [ref=f13e83]:
+            - link [ref=f13e1138] [cursor=pointer]:
+              - /url: https://maps.google.com/maps?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&output=search&q=Carlow+/+Leinster+Handyman+Services&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&source=lnms&fbs=ABfTbFVv2w2iSESTvmwEpLKOzozoJ0HaMXYoTYYEdFOtDfJk9xqXiUf4j3lkfillYg6yoQgtVURp6-M5aUEHGGVyot69TJqKLdpzH7q9RDiuo3Wy4f9ExCdVuW0e_LlxZ5dt7qO7dDliyaskAgF4szN1jnDJcVfBKKqHm3VNARRjPT-LwadYKxaJHaTqNS2JsppsUcgZPiQqzO4iyJh5vspouX497HnSArKe_ramXbbb8QuC7FylpDd1IQcHc1VJk3-jEzB06KY6TIHY9KHfXqyxL9jMDwB9eQ&entry=mc&ved=1t:200715&ictx=111
+              - generic [ref=f13e85]: Карты
+          - listitem [ref=f13e87]:
+            - link [ref=f13e1139] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&udm=7&fbs=ABfTbFVv2w2iSESTvmwEpLKOzozoJ0HaMXYoTYYEdFOtDfJk9xqXiUf4j3lkfillYg6yoQgtVURp6-M5aUEHGGVyot69TJqKLdpzH7q9RDiuo3Wy4f9ExCdVuW0e_LlxZ5dt7qO7dDliyaskAgF4szN1jnDJcVfBKKqHm3VNARRjPT-LwadYKxaJHaTqNS2JsppsUcgZPiQqzO4iyJh5vspouX497HnSArKe_ramXbbb8QuC7FylpDd1IQcHc1VJk3-jEzB06KY6TIHY9KHfXqyxL9jMDwB9eQ&q=Carlow+/+Leinster+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQtKgLegQIEBAB
+              - generic [ref=f13e89]: Видео
+          - listitem [ref=f13e91]:
+            - link [ref=f13e1140] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&udm=28&fbs=ABfTbFVv2w2iSESTvmwEpLKOzozoJ0HaMXYoTYYEdFOtDfJk9xqXiUf4j3lkfillYg6yoQgtVURp6-M5aUEHGGVyot69TJqKLdpzH7q9RDiuo3Wy4f9ExCdVuW0e_LlxZ5dt7qO7dDliyaskAgF4szN1jnDJcVfBKKqHm3VNARRjPT-LwadYKxaJHaTqNS2JsppsUcgZPiQqzO4iyJh5vspouX497HnSArKe_ramXbbb8QuC7FylpDd1IQcHc1VJk3-jEzB06KY6TIHY9KHfXqyxL9jMDwB9eQ&q=Carlow+/+Leinster+Handyman+Services&ved=1t:220175&ictx=111
+              - generic [ref=f13e93]: Покупки
+          - listitem [ref=f13e95]:
+            - link [ref=f13e1141] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&udm=39&fbs=ABfTbFVv2w2iSESTvmwEpLKOzozoJ0HaMXYoTYYEdFOtDfJk9xqXiUf4j3lkfillYg6yoQgtVURp6-M5aUEHGGVyot69TJqKLdpzH7q9RDiuo3Wy4f9ExCdVuW0e_LlxZ5dt7qO7dDliyaskAgF4szN1jnDJcVfBKKqHm3VNARRjPT-LwadYKxaJHaTqNS2JsppsUcgZPiQqzO4iyJh5vspouX497HnSArKe_ramXbbb8QuC7FylpDd1IQcHc1VJk3-jEzB06KY6TIHY9KHfXqyxL9jMDwB9eQ&q=Carlow+/+Leinster+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQs6gLegQIDhAB
+              - generic [ref=f13e97]: Короткие видео
+          - listitem [ref=f13e99]:
+            - button [ref=f13e1142] [cursor=pointer]:
+              - generic [ref=f13e1143]: Ещё
+        - button [ref=f13e1144] [cursor=pointer]:
+          - generic [ref=f13e109]: Инструменты
+    - heading [level=1] [ref=f13e1145]: Результаты поиска
+    - main [ref=f13e121]:
+      - region [ref=f13e1146]:
+        - generic [ref=f13e129]:
+          - generic [ref=f13e139]:
+            - heading [level=2] [ref=f13e1147]: Ваша компания в Google
+            - link [ref=f13e1149] [cursor=pointer]:
+              - /url: "#mpd=promote/performance"
+              - generic [ref=f13e1150]: 16 взаимодействий с клиентами
+          - button [ref=f13e1154] [cursor=pointer]:
+            - generic [ref=f13e1155]: Качество профиля
+            - link [ref=f13e1162]:
+              - /url: "#mpd=setup/complete?flowType=3"
+              - text: Полная информация
+          - button [ref=f13e1163] [cursor=pointer]
+        - region [ref=f13e1164]:
+          - list [ref=f13e1165]:
+            - listitem [ref=f13e166]:
+              - button [ref=f13e1166] [cursor=pointer]:
+                - generic [ref=f13e1171]: Изменить профиль
+            - listitem [ref=f13e169]:
+              - button [ref=f13e1172] [cursor=pointer]:
+                - generic [ref=f13e1177]: Посмотреть отзывы
+            - listitem [ref=f13e172]:
+              - button [ref=f13e1178] [cursor=pointer]:
+                - generic [ref=f13e1183]: Фотографии
+            - listitem [ref=f13e175]:
+              - button [ref=f13e1184] [cursor=pointer]:
+                - generic [ref=f13e1190]: Публикации
+            - listitem [ref=f13e178]:
+              - button [ref=f13e1191] [cursor=pointer]:
+                - generic [ref=f13e1197]: Эффективность
+            - listitem [ref=f13e181]:
+              - link [ref=f13e1198] [cursor=pointer]:
+                - /url: https://ads.google.com/signup?authuser=0&sf=AWX_GMB&cbdbId=u-1757413723963922125&utm_campaign=UA-ru-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A6653296821%7Cib%3A9279461727%7Cib%3A7966379274%7C-unqsi-CJG884a-6JYDFXXRGgYdEA40og-unqsi-uao-agembe-acce&subid=UA-ru-xs-ip-gmb_aw_serp_ia2_ca-sf-dw-uao-s500g500%7Cib%3A6653296821%7Cib%3A9279461727%7Cib%3A7966379274%7C-unqsi-CJG884a-6JYDFXXRGgYdEA40og-unqsi-uao-agembe-acce&utm_medium=et&utm_source=gmb
+                - generic [ref=f13e1203]: Реклама
+            - listitem [ref=f13e184]:
+              - button [ref=f13e1204] [cursor=pointer]:
+                - generic [ref=f13e1211]: Изменить товары
+            - listitem [ref=f13e187]:
+              - button [ref=f13e1212] [cursor=pointer]:
+                - generic [ref=f13e1218]: Изменить услуги
+            - listitem [ref=f13e190]:
+              - button [ref=f13e1219] [cursor=pointer]:
+                - generic [ref=f13e1225]: Бронирования
+            - listitem [ref=f13e193]:
+              - button [ref=f13e1226] [cursor=pointer]:
+                - generic [ref=f13e1231]: Запросить отзывы
+        - generic [ref=f13e1233]:
+          - list [ref=f13e1235]:
+            - generic [ref=f13e1236]:
+              - generic [ref=f13e1237]:
+                - button [ref=f13e1240] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1241]: Бесплатно получайте статистику
+                  - generic [ref=f13e1243]: Настройте Аналитику, чтобы знать, как клиенты взаимодействуют с сайтом или приложением.
+                - button [ref=f13e1248] [cursor=pointer]
+              - generic [ref=f13e1253]:
+                - button [ref=f13e1256] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1257]: Заполните профиль
+                  - generic [ref=f13e1259]: Добавьте информацию о компании и привлекайте больше клиентов.
+                - button [ref=f13e1264] [cursor=pointer]
+              - generic [ref=f13e1269]:
+                - button [ref=f13e1272] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1273]: Начните собирать отзывы
+                  - generic [ref=f13e1275]: Отправьте своим клиентам форму отзыва
+                - button [ref=f13e1280] [cursor=pointer]
+              - generic [ref=f13e1285]:
+                - button [ref=f13e1288] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1289]: Получить бонус
+                  - generic [ref=f13e1291]: Привлекайте клиентов, используя бонус (400 €) для новых рекламодателей.
+                - button [ref=f13e1296] [cursor=pointer]
+              - generic [ref=f13e1301]:
+                - button [ref=f13e1304] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1305]: Добавьте профили в соцсетях
+                  - generic [ref=f13e1307]: Укажите профили в соцсетях, чтобы укреплять доверие клиентов
+                - button [ref=f13e1312] [cursor=pointer]
+              - generic [ref=f13e1317]:
+                - button [ref=f13e1320] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1321]: Привлекайте внимание потребителей
+                  - generic [ref=f13e1323]: Последние фото были опубликованы 187 дн. назад. Добавьте новые.
+                - button [ref=f13e1328] [cursor=pointer]
+              - generic [ref=f13e1333]:
+                - button [ref=f13e1336] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1337]: Создать акцию
+                  - generic [ref=f13e1339]: Сообщите клиентам о распродажах и скидках.
+                - button [ref=f13e1344] [cursor=pointer]
+              - generic [ref=f13e1349]:
+                - button [ref=f13e1352] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1353]: Добавить новость
+                  - generic [ref=f13e1355]: Расскажите новости о своей компании
+                - button [ref=f13e1360] [cursor=pointer]
+              - generic [ref=f13e1365]:
+                - button [ref=f13e1368] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1369]: Добавьте автозаполнение адресов
+                  - generic [ref=f13e1371]: Помогите клиентам ввести правильный адрес, чтобы оформление покупки прошло быстрее.
+                - button [ref=f13e1376] [cursor=pointer]
+              - generic [ref=f13e1381]:
+                - button [ref=f13e1384] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1385]: Уникальный электронный адрес
+                  - generic [ref=f13e1387]: Настройте корпоративный адрес @vasha-kompaniya.com в Google Workspace
+                - button [ref=f13e1392] [cursor=pointer]
+              - generic [ref=f13e1397]:
+                - button [ref=f13e1400] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=f13e1401]: Отчет за августа готов
+                  - generic [ref=f13e1403]: Посмотрите новые данные и узнайте, насколько эффективна ваша компания.
+                - button [ref=f13e1408] [cursor=pointer]
+          - button [aria-hidden] [ref=f13e1413] [cursor=pointer]
+        - link [ref=f13e1418] [cursor=pointer]:
+          - /url: https://support.google.com/business?p=business_on_search&hl=ru-UA&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQybwEegQIORAc
+          - text: Доступно только менеджерам профиля.
+      - generic [ref=f13e254]:
+        - generic [ref=f13e259]:
+          - generic [ref=f13e266]:
+            - generic [ref=f13e267]:
+              - button [ref=f13e270] [cursor=pointer]
+              - link [ref=f13e1419] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f13e275]: Добавить фото
+              - link [ref=f13e1420] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=f13e278]: Добавить фото
+            - generic [ref=f13e280]:
+              - link [ref=f13e1421] [cursor=pointer]:
+                - /url: /maps/place/Carlow+%2F+Leinster+Handyman+Services/data=!4m2!3m1!1s0x0:0xa653db01c7a4720b?sa=X&ved=1t:2428&hl=ru&ictx=111
+              - link [ref=f13e1423] [cursor=pointer]:
+                - /url: /maps/place/Carlow+%2F+Leinster+Handyman+Services/data=!4m2!3m1!1s0x0:0xa653db01c7a4720b?sa=X&ved=1t:2428&hl=ru&ictx=111
+          - generic [ref=f13e292]:
+            - heading [level=2] [ref=f13e1425]: Carlow / Leinster Handyman Services
+            - generic [ref=f13e296]:
+              - generic [ref=f13e297]:
+                - generic [ref=f13e298]: Мастер на все руки
+                - generic [aria-hidden] [ref=f13e304]: Вы управляете профилем этой компании
+              - button [ref=f13e1427] [cursor=pointer]
+        - generic [ref=f13e326]:
+          - generic [ref=f13e335]:
+            - link [ref=f13e1429] [cursor=pointer]:
+              - /url: https://wa.me/+353874919556
+              - generic [ref=f13e338]: Сайт
+            - button [ref=f13e1430] [cursor=pointer]:
+              - generic [ref=f13e350]: Сохранить
+            - generic [ref=f13e351] [cursor=pointer]: "+2"
+          - separator [ref=f13e353]
+        - generic [ref=f13e357]:
+          - generic [ref=f13e359]:
+            - generic [ref=f13e362]:
+              - generic [ref=f13e363]: "Телефон:"
+              - link [ref=f13e1431] [cursor=pointer]:
+                - /url: "#"
+                - text: +353 87 491 9556
+            - generic [ref=f13e367]:
+              - generic [ref=f13e368]:
+                - link [ref=f13e1432] [cursor=pointer]:
+                  - /url: /search?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&q=carlow+/+leinster+handyman+services+%D0%92%D1%80%D0%B5%D0%BC%D1%8F+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B&ludocid=11985163834053915147&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ6BN6BAghEAI
+                  - text: Часы работы
+                - text: ":"
+              - button [ref=f13e1433]:
+                - generic [ref=f13e372]: Круглосуточно
+            - link [ref=f13e1434] [cursor=pointer]:
+              - /url: "#"
+              - text: Изменить данные о компании
+            - generic [ref=f13e388]:
+              - heading [level=3] [ref=f13e1435]: Развивайте бизнес с помощью Google Рекламы
+              - generic [ref=f13e392]:
+                - generic [ref=f13e393]:
+                  - generic [ref=f13e394]:
+                    - text: Потратьте 400 € и получите 400 € на Google Рекламу. Только для новых рекламодателей.
+                    - link [ref=f13e1436] [cursor=pointer]:
+                      - /url: https://ads.google.com/intl/ru_ie/home/terms-and-conditions/incentives/?bc=IE&bid=s500g500%7Cib:6653296821%7C
+                      - text: Действуют Условия использования.
+                  - generic [ref=f13e398]:
+                    - generic [aria-hidden] [ref=f13e403]: Разместить рекламу
+                    - link [ref=f13e1437] [cursor=pointer]:
+                      - /url: https://ads.google.com/signup?authuser=0&sf=AWX_GMB&cbdbId=u-1757413723963922125&utm_campaign=ru-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMzG14W-6JYDFcXAuwgd6e0eTQ-unqsi-acce&subid=ru-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMzG14W-6JYDFcXAuwgd6e0eTQ-unqsi-acce&utm_medium=et&utm_source=gmb
+                - link [ref=f13e406] [cursor=pointer]:
+                  - /url: https://ads.google.com/signup?authuser=0&sf=AWX_GMB&cbdbId=u-1757413723963922125&utm_campaign=ru-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMzG14W-6JYDFcXAuwgd6e0eTQ-unqsi-acce&subid=ru-xs-ip-gmb_aw_serp_kp-sf-dw-uao-s500g500%7Cib:6653296821%7Cib:9279461727%7Cib:7966379274%7C-unqsi-CMzG14W-6JYDFcXAuwgd6e0eTQ-unqsi-acce&utm_medium=et&utm_source=gmb
+            - generic [ref=f13e450]:
+              - text: "Обслуживаемая территория:"
+              - button [ref=f13e1438] [cursor=pointer]: Карлоу и окрестности
+          - separator [ref=f13e452]
+        - generic [ref=f13e456]:
+          - heading [level=3] [ref=f13e1439]: Отзывы
+          - generic [ref=f13e464]:
+            - generic [ref=f13e465]:
+              - heading [level=3] [ref=f13e1440]: Отзывы в Google
+              - button [ref=f13e1441] [cursor=pointer]
+              - generic [ref=f13e475]:
+                - button [ref=f13e1442] [cursor=pointer]: Получайте отзывы о своей компании
+                - link [ref=f13e1443] [cursor=pointer]:
+                  - /url: "#"
+                  - text: Добавить фото
+            - button [ref=f13e1444] [cursor=pointer]: Получить больше отзывов
+          - separator [ref=f13e487]
+        - generic [ref=f13e491]:
+          - generic [ref=f13e500]:
+            - heading [level=3] [ref=f13e1445]: Делитесь новостями
+            - generic [ref=f13e502]: Держите клиентов в курсе новостей вашей компании
+            - button [ref=f13e1446]:
+              - generic [ref=f13e513]: Добавить запись
+          - separator [ref=f13e516]
+        - generic [ref=f13e525]:
+          - generic [ref=f13e526]:
+            - heading [level=3] [ref=f13e1447]: "Источник: \"Carlow / Leinster Handyman Services\""
+            - button [ref=f13e1448]
+          - generic [ref=f13e533]:
+            - text: "\"🔧 Reliable Handyman Services in Carlow & Nearby Areas Hi, my name is Alex. I provide professional handyman and small construction services with fair prices and high quality. ✔️ Fast response ✔️ Reliable and punctual ✔️ Clean and professional work..."
+            - button [ref=f13e1449] [cursor=pointer]: Развернуть
+        - generic [ref=f13e542]:
+          - generic [ref=f13e545]:
+            - link [ref=f13e1450] [cursor=pointer]:
+              - /url: https://carlowhandyman.ie/
+              - heading [level=3] [ref=f13e1451]: Handyman Services in Carlow | Reliable Local Handyman
+              - generic [ref=f13e557]:
+                - generic [ref=f13e558]: carlowhandyman.ie
+                - generic [ref=f13e560]: https://carlowhandyman.ie
+            - generic [ref=f13e562]:
+              - generic [ref=f13e563]: ·
+              - link [ref=f13e1452] [cursor=pointer]:
+                - /url: https://carlowhandyman.ie/
+                - text: Перевести эту страницу
+            - button [ref=f13e1453] [cursor=pointer]
+          - generic [ref=f13e576]:
+            - text: We provide door repairs, minor electrical works, plumbing fixes, furniture assembly and general home repairs. Serving
+            - emphasis [ref=f13e577]: Carlow
+            - text: and a 40km surrounding area. Our ...
+          - generic [ref=f13e579]:
+            - text: "Не найдено: Leinster ‎| Нужно включить:"
+            - link [ref=f13e1454] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&q=Carlow+/+%22Leinster%22+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ5t4CegQITRAB
+              - text: Leinster
+        - generic [ref=f13e588]:
+          - generic [ref=f13e591]:
+            - link [ref=f13e1455] [cursor=pointer]:
+              - /url: https://www.yelp.com/search?cflt=handyman&find_loc=Carlow
+              - heading [level=3] [ref=f13e1456]: THE BEST 10 HANDYMAN IN CARLOW, REPUBLIC OF ...
+              - generic [ref=f13e600]:
+                - generic [ref=f13e601]: Yelp
+                - generic [ref=f13e603]: https://www.yelp.com › search
+            - generic [ref=f13e605]:
+              - generic [ref=f13e606]: ·
+              - link [ref=f13e1457] [cursor=pointer]:
+                - /url: https://www.yelp.com/search?cflt=handyman&find_loc=Carlow
+                - text: Перевести эту страницу
+            - button [ref=f13e1458] [cursor=pointer]
+          - generic [ref=f13e619]:
+            - text: Top 10 Best Handyman Near Carlow, Carlow - With Real Reviews ·
+            - emphasis [ref=f13e620]: Right Hands
+            - text: · John The Handyman · Handy Arthur · Matt's Maintenance · Job Done Handyman Services.
+          - img [ref=f13e1459]: 3,3(48)
+        - generic [ref=f13e636]:
+          - generic [ref=f13e639]:
+            - link [ref=f13e1460] [cursor=pointer]:
+              - /url: https://www.goldenpages.ie/handyman-services/carlow-county/
+              - heading [level=3] [ref=f13e1461]: Best 7 Handyman Services in Carlow County
+              - generic [ref=f13e648]:
+                - generic [ref=f13e649]: Goldenpages.ie
+                - generic [ref=f13e651]: https://www.goldenpages.ie › ...
+            - generic [ref=f13e653]:
+              - generic [ref=f13e654]: ·
+              - link [ref=f13e1462] [cursor=pointer]:
+                - /url: https://www.goldenpages.ie/handyman-services/carlow-county/
+                - text: Перевести эту страницу
+            - button [ref=f13e1463] [cursor=pointer]
+          - generic [ref=f13e667]:
+            - text: Welcome to
+            - emphasis [ref=f13e668]: Squirrel's Band – the number one choice for property maintenance services
+            - text: throughout Carlow. Website · Opening Hours · (086) 176 7334. Why Choose ...
+        - generic [ref=f13e676]:
+          - generic [ref=f13e679]:
+            - link [ref=f13e1464] [cursor=pointer]:
+              - /url: https://www.squirrelsband.ie/handyman-carlow
+              - heading [level=3] [ref=f13e1465]: Handyman Carlow
+              - generic [ref=f13e688]:
+                - generic [ref=f13e689]: Squirrels Band | Carlow
+                - generic [ref=f13e691]: https://www.squirrelsband.ie › ...
+            - generic [ref=f13e693]:
+              - generic [ref=f13e694]: ·
+              - link [ref=f13e1466] [cursor=pointer]:
+                - /url: https://www.squirrelsband.ie/handyman-carlow
+                - text: Перевести эту страницу
+            - button [ref=f13e1467] [cursor=pointer]
+          - generic [ref=f13e707]:
+            - text: Keep your garden pristine with
+            - emphasis [ref=f13e708]: Squirrel's Band's garden maintenance in Carlow
+            - text: . From lawn care to landscaping, our experts handle all your gardening needs.
+        - generic [ref=f13e716]:
+          - generic [ref=f13e719]:
+            - link [ref=f13e1468] [cursor=pointer]:
+              - /url: https://locallyirish.ie/handyman/carlow
+              - heading [level=3] [ref=f13e1469]: Handyman Services in Carlow (2026) — 2 Local Businesses
+              - generic [ref=f13e728]:
+                - generic [ref=f13e729]: locallyirish.ie
+                - generic [ref=f13e731]: https://locallyirish.ie › carlow
+            - generic [ref=f13e733]:
+              - generic [ref=f13e734]: ·
+              - link [ref=f13e1470] [cursor=pointer]:
+                - /url: https://locallyirish.ie/handyman/carlow
+                - text: Перевести эту страницу
+            - button [ref=f13e1471] [cursor=pointer]
+          - generic [ref=f13e747]:
+            - text: Find
+            - emphasis [ref=f13e748]: 2 local handyman services businesses in Co. Carlow
+            - text: ", Ireland. Browse verified listings with contact details, opening hours and reviews on ..."
+        - generic [ref=f13e756]:
+          - generic [ref=f13e759]:
+            - link [ref=f13e1472] [cursor=pointer]:
+              - /url: https://www.houzz.com/professionals/handyman/carlow-01-ie-probr0-bo~t_27204~r_2965768
+              - heading [level=3] [ref=f13e1473]: Local Handyman Services Near Carlow
+              - generic [ref=f13e768]:
+                - generic [ref=f13e769]: Houzz
+                - generic [ref=f13e771]: https://www.houzz.com › c...
+            - generic [ref=f13e773]:
+              - generic [ref=f13e774]: ·
+              - link [ref=f13e1474] [cursor=pointer]:
+                - /url: https://www.houzz.com/professionals/handyman/carlow-01-ie-probr0-bo~t_27204~r_2965768
+                - text: Перевести эту страницу
+            - button [ref=f13e1475] [cursor=pointer]
+          - generic [ref=f13e787]:
+            - emphasis [ref=f13e788]: Search 21 Carlow local handyman services
+            - text: to find the best handyman service for your project. See the top reviewed local handyman services in Carlow, Co.
+          - generic [ref=f13e790]:
+            - text: "Не найдено: Leinster ‎| Нужно включить:"
+            - link [ref=f13e1476] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&q=Carlow+/+%22Leinster%22+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ5t4CegQIdhAB
+              - text: Leinster
+        - generic [ref=f13e799]:
+          - generic [ref=f13e802]:
+            - link [ref=f13e1477] [cursor=pointer]:
+              - /url: https://www.facebook.com/davesdiycarlow/
+              - heading [level=3] [ref=f13e1478]: Dave's DIY | Carlow
+              - generic [ref=f13e811]:
+                - generic [ref=f13e812]: Facebook · Dave's DIY
+                - generic [ref=f13e814]: "Подписчиков: более 390"
+            - button [ref=f13e1479] [cursor=pointer]
+          - generic [ref=f13e827]:
+            - text: Dave's DIY. Full property management & maintenance
+            - emphasis [ref=f13e828]: service
+            - text: and general
+            - emphasis [ref=f13e829]: handyman
+            - text: in the
+            - emphasis [ref=f13e830]: Leinster
+            - text: area.
+          - img [ref=f13e1480]: 5,0(3)
+        - generic [ref=f13e846]:
+          - generic [ref=f13e849]:
+            - link [ref=f13e1481] [cursor=pointer]:
+              - /url: https://carlowhandyman.ie/about/
+              - heading [level=3] [ref=f13e1482]: About Carlow Handyman | Reliable Local Handyman Services
+              - generic [ref=f13e861]:
+                - generic [ref=f13e862]: carlowhandyman.ie
+                - generic [ref=f13e864]: https://carlowhandyman.ie › ...
+            - generic [ref=f13e866]:
+              - generic [ref=f13e867]: ·
+              - link [ref=f13e1483] [cursor=pointer]:
+                - /url: https://carlowhandyman.ie/about/
+                - text: Перевести эту страницу
+            - button [ref=f13e1484] [cursor=pointer]
+          - generic [ref=f13e880]:
+            - text: We provide
+            - emphasis [ref=f13e881]: handyman services in Carlow and surrounding areas
+            - text: within approximately 40 km. If you need help with repairs, installations or maintenance, feel free ...
+          - generic [ref=f13e883]:
+            - text: "Не найдено: Leinster ‎| Нужно включить:"
+            - link [ref=f13e1485] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&q=Carlow+/+%22Leinster%22+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ5t4CegQIexAB
+              - text: Leinster
+        - generic [ref=f13e892]:
+          - generic [ref=f13e895]:
+            - link [ref=f13e1486] [cursor=pointer]:
+              - /url: https://www.onlinetradesmen.ie/handyman/carlow
+              - heading [level=3] [ref=f13e1487]: Find Handyman in Carlow
+              - generic [ref=f13e904]:
+                - generic [ref=f13e905]: Onlinetradesmen
+                - generic [ref=f13e907]: https://www.onlinetradesmen.ie › ...
+            - generic [ref=f13e909]:
+              - generic [ref=f13e910]: ·
+              - link [ref=f13e1488] [cursor=pointer]:
+                - /url: https://www.onlinetradesmen.ie/handyman/carlow
+                - text: Перевести эту страницу
+            - button [ref=f13e1489] [cursor=pointer]
+          - generic [ref=f13e923]:
+            - text: Find Handyman in Carlow.
+            - emphasis [ref=f13e924]: Easily find local qualified and rated Handyman around Carlow
+            - text: . Post your job, compare replies and hire your preferred professional.
+        - generic [ref=f13e932]:
+          - generic [ref=f13e935]:
+            - link [ref=f13e1490] [cursor=pointer]:
+              - /url: https://www.bark.com/en/ie/handyman/carlow/carlow/
+              - heading [level=3] [ref=f13e1491]: Find a Handyman in Carlow
+              - generic [ref=f13e944]:
+                - generic [ref=f13e945]: Bark.com
+                - generic [ref=f13e947]: https://www.bark.com › car...
+            - generic [ref=f13e949]:
+              - generic [ref=f13e950]: ·
+              - link [ref=f13e1492] [cursor=pointer]:
+                - /url: https://www.bark.com/en/ie/handyman/carlow/carlow/
+                - text: Перевести эту страницу
+            - button [ref=f13e1493] [cursor=pointer]
+          - generic [ref=f13e963]:
+            - text: Looking for a Handyman?
+            - emphasis [ref=f13e964]: Bark can match you with the best Handymen in Carlow
+            - text: in minutes. View past reviews and get free Handyman quotes.
+          - generic [ref=f13e967]:
+            - generic [ref=f13e968]:
+              - img [ref=f13e1494]: 4,5(177)
+              - text: ·
+            - text: "Диапазон цен: €80 - €700 (Avg: €150)"
+          - generic [ref=f13e974]:
+            - text: "Не найдено: Leinster ‎| Нужно включить:"
+            - link [ref=f13e1495] [cursor=pointer]:
+              - /url: /search?sca_esv=ead2612d6155db9a&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&q=Carlow+/+%22Leinster%22+Handyman+Services&sa=X&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ5t4CegQIfBAB
+              - text: Leinster
+        - generic [ref=f13e978]:
+          - heading [level=2] [ref=f13e1496]: Реклама
+          - generic [ref=f13e986]:
+            - generic [ref=f13e993]:
+              - generic [ref=f13e998]:
+                - generic [ref=f13e999]:
+                  - link [ref=f13e1497] [cursor=pointer]:
+                    - /url: https://www.handymanservice.ie/
+                    - heading [level=3] [ref=f13e1498]: Handyman Services Provided - handymanservice.ie
+                    - generic [ref=f13e1010]:
+                      - generic [ref=f13e1011]: HandymanService.ie
+                      - generic [ref=f13e1013]: https://www.handymanservice.ie
+                  - button [ref=f13e1499] [cursor=pointer]
+                - generic [ref=f13e1020]: Professional home maintenance and repair services across Dublin & Kildare. Need Help Around The Home? Local, Trusted Handyman Service. Book A Professional Today. Serving Dublin & Kildare.
+              - generic [ref=f13e1027]:
+                - generic [ref=f13e1028]:
+                  - link [ref=f13e1500] [cursor=pointer]:
+                    - /url: https://taskmatch.ie/
+                    - heading [level=3] [ref=f13e1501]: Handymen, Removals & More | Hire Local Skilled Workers
+                    - generic [ref=f13e1036]:
+                      - generic [ref=f13e1037]: TaskMatch.ie
+                      - generic [ref=f13e1039]: http://www.taskmatch.ie › hire
+                  - button [ref=f13e1502] [cursor=pointer]
+                - generic [ref=f13e1046]: "Hire Local Skilled Workers for all types of jobs in your Home or Office. Get Free Quotes in minutes from workers in your area. Highlights: Skilled Workers Available, Expert Available."
+                - generic [ref=f13e1049]: Более 10 000 посещений за последний месяц
+            - button [ref=f13e1503] [cursor=pointer]:
+              - separator [aria-hidden] [ref=f13e1056]
+              - generic [ref=f13e1057]: Скрыть рекламу
+      - navigation [ref=f13e1064]:
+        - heading [level=1] [ref=f13e1504]: Навигация по страницам
+        - text: "1"
+        - link [ref=f13e1505] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=10&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAE
+          - text: "2"
+        - link [ref=f13e1506] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=20&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAG
+          - text: "3"
+        - link [ref=f13e1507] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=30&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAI
+          - text: "4"
+        - link [ref=f13e1508] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=40&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAK
+          - text: "5"
+        - link [ref=f13e1509] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=50&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAM
+          - text: "6"
+        - link [ref=f13e1510] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=60&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAO
+          - text: "7"
+        - link [ref=f13e1511] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=70&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAQ
+          - text: "8"
+        - link [ref=f13e1512] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=80&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAS
+          - text: "9"
+        - link [ref=f13e1513] [cursor=pointer]:
+          - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=90&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8tMDegQIWxAU
+          - text: "10"
+        - heading [level=2] [ref=f13e1514]:
+          - link [ref=f13e1515] [cursor=pointer]:
+            - /url: /search?q=Carlow+/+Leinster+Handyman+Services&sca_esv=ead2612d6155db9a&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&authuser=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094&ei=l_qkaomlBY7dwPAPwpNZ&start=10&sa=N&sstk=AS6-VmIHaqaRev-SD8P2VVclLjOFJdToVs3uXMpKNJPgn1DQ_s3CKfCKnN1lFnfCmOlfPzf4rxDWrR5zRfmzJb5O5ywRePd72scGaQ&ved=2ahUKEwjJzM-FvuiWAxWOLhAIHcJJFgAQ8NMDegQIWxAW
+            - generic [ref=f13e1089]: Следующая
+    - contentinfo [ref=f13e1091]:
+      - heading [level=1] [ref=f13e1516]: Ссылки в нижнем колонтитуле
+      - generic [ref=f13e1096]:
+        - generic [ref=f13e1099]:
+          - generic [ref=f13e1100]: Результаты персонализированы
+          - generic [ref=f13e1101]: "-"
+          - link [ref=f13e1517] [cursor=pointer]:
+            - /url: https://www.google.com/search?q=Carlow+/+Leinster+Handyman+Services&stick=H4sIAAAAAAAA_-NgU1IxqDBOsTSzMDBNMUtMNDNIM7UyqEg0MzVOSTIwTDZPNDE3MkhaxKrsnFiUk1-uoK_gk5qZV1ySWqTgkZiXUpmbmKcQnFpUlpmcWgwACTVR2k4AAAA&hl=ru&mat=CTPpu3uHaZznElcBa0lj_89IC-T4QUhAAPFLy7Kco58gZ72aiAIM3wk8BIG__YIBqHCm3hh9SQ3rcZ47ejVMS8_4rVReZMT3ngbyCYAtbKp0GHDG5CBnUFiqJATH4lk6Emo&authuser=0&peek_pws=0&sxsrf=APpeQnsJEDMSfDIYQu7xQ4VmWcM8QUthxQ:1789196951094
+            - generic [ref=f13e1104]: Попробовать без персонализации
+        - generic [ref=f13e1106]:
+          - text: Украина
+          - generic [ref=f13e1108]:
+            - button [ref=f13e1518] [cursor=pointer]:
+              - generic [ref=f13e1111]: 39070, Градижск, Полтавская область
+              - generic [ref=f13e1113]:
+                - text: "-"
+                - generic [ref=f13e1114]: Определено с учетом дом. адреса
+            - text: "-"
+            - button [ref=f13e1519] [cursor=pointer]: Обновить
+        - generic [ref=f13e1119]:
+          - link [ref=f13e1520] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=ru-UA&fg=1
+            - text: Справка
+          - link [ref=f13e1521] [cursor=pointer]:
+            - /url: "#"
+            - text: Отправить отзыв
+          - link [ref=f13e1522] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=ru-UA&fg=1
+            - text: Конфиденциальность
+          - link [ref=f13e1523] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=ru-UA&fg=1
+            - text: Условия
+  - iframe [active] [ref=f13e1524]:
+    - dialog [ref=f19e3]:
+      - banner [active] [ref=f19e5]:
+        - button "Назад" [ref=f19e7] [cursor=pointer]
+        - heading "Информация о компании" [level=1] [ref=f19e13]
+        - button "Меню" [ref=f19e17] [cursor=pointer]
+        - button "Закрыть" [ref=f19e24] [cursor=pointer]
+      - generic [ref=f19e34]:
+        - tablist [ref=f19e42]:
+          - generic [ref=f19e45]:
+            - tab "Общая информация" [selected] [ref=f19e46] [cursor=pointer]
+            - tab "Контактные данные" [ref=f19e47] [cursor=pointer]
+            - tab "Местоположение" [ref=f19e48] [cursor=pointer]
+            - tab "Часы работы" [ref=f19e49] [cursor=pointer]
+            - tab "Ещё" [ref=f19e50] [cursor=pointer]
+        - main [ref=f19e51]:
+          - generic [ref=f19e55]:
+            - generic [ref=f19e56]:
+              - heading "Информация о вашей компании" [level=2] [ref=f19e57]
+              - generic [ref=f19e58]:
+                - region [ref=f19e60] [cursor=pointer]:
+                  - generic [ref=f19e61]:
+                    - generic [ref=f19e63]:
+                      - heading "Название компании" [level=3] [ref=f19e64]
+                      - button "\"Название компании\" – изменить" [ref=f19e65]
+                    - list [ref=f19e69]:
+                      - listitem [ref=f19e70]:
+                        - generic "Carlow / Leinster Handyman Services" [ref=f19e71]: Carlow / Leinster Handyman Services
+                - region [ref=f19e75] [cursor=pointer]:
+                  - generic [ref=f19e76]:
+                    - generic [ref=f19e78]:
+                      - heading "Вид деятельности" [level=3] [ref=f19e79]
+                      - button "\"Вид деятельности\" – изменить" [ref=f19e80]
+                    - list [ref=f19e84]:
+                      - listitem [ref=f19e85]:
+                        - generic "Мастер на все руки" [ref=f19e86]: Мастер на все руки
+                - region [ref=f19e90] [cursor=pointer]:
+                  - generic [ref=f19e91]:
+                    - generic [ref=f19e93]:
+                      - heading "Описание" [level=3] [ref=f19e94]
+                      - button "\"Описание\" – изменить" [ref=f19e95]
+                    - list [ref=f19e99]:
+                      - listitem [ref=f19e100]:
+                        - generic "🔧 Reliable Handyman Services in Carlow & Nearby Areas Hi, my name is Alex. I provide professional handyman and small construction services with fair prices and high quality. ✔️ Fast response ✔️ Reliable and punctual ✔️ Clean and professional work ✔️ Affordable prices" [ref=f19e101]: 🔧 Reliable Handyman Services in Carlow & Nearby Areas Hi, my name is Alex. I provide professional handyman and small construction services with fair prices and high quality. ✔️ Fast response ✔️ Reliable and punctual ✔️ Clean and professional work ✔️ Affordable prices
+                - region [ref=f19e105] [cursor=pointer]:
+                  - generic [ref=f19e106]:
+                    - generic [ref=f19e108]:
+                      - heading "Дата открытия" [level=3] [ref=f19e109]
+                      - button "\"Дата открытия\" – изменить" [ref=f19e110]
+                    - generic [ref=f19e113]: Добавить
+            - generic [ref=f19e114]:
+              - heading "Контактная информация" [level=2] [ref=f19e115]
+              - generic [ref=f19e116]:
+                - region [ref=f19e118] [cursor=pointer]:
+                  - generic [ref=f19e119]:
+                    - generic [ref=f19e121]:
+                      - heading "Номер телефона" [level=3] [ref=f19e122]
+                      - button "\"Номер телефона\" – изменить" [ref=f19e123]
+                    - list [ref=f19e127]:
+                      - listitem [ref=f19e128]:
+                        - generic "087 491 9556" [ref=f19e129]: 087 491 9556
+                - region [ref=f19e133] [cursor=pointer]:
+                  - generic [ref=f19e134]:
+                    - generic [ref=f19e136]:
+                      - heading "Чат" [level=3] [ref=f19e137]
+                      - button "\"Чат\" – изменить" [ref=f19e138]
+                    - generic [ref=f19e142]:
+                      - generic [ref=f19e143]: Ваши настройки сообщений были изменены Google
+                      - generic [ref=f19e149]:
+                        - button "Подробнеео том, как Google собирает и использует информацию о компании" [ref=f19e151]:
+                          - generic [aria-hidden] [ref=f19e153]: Подробнее
+                        - button "ОК" [ref=f19e154]
+                    - generic [ref=f19e157]:
+                      - heading "Текущие данные" [level=4] [ref=f19e159]
+                      - list [ref=f19e160]:
+                        - listitem [ref=f19e161]:
+                          - 'generic "Изменена следующая информация: https://wa.me/353874919556" [ref=f19e162]':
+                            - insertion [ref=f19e165]: https://wa.me/353874919556
+                - region [ref=f19e167] [cursor=pointer]:
+                  - generic [ref=f19e168]:
+                    - generic [ref=f19e170]:
+                      - heading "Сайт" [level=3] [ref=f19e171]
+                      - button "\"Сайт\" – изменить" [ref=f19e172]
+                    - list [ref=f19e176]:
+                      - listitem [ref=f19e177]:
+                        - generic "https://wa.me/+353874919556" [ref=f19e178]: https://wa.me/+353874919556
+                - region [ref=f19e182] [cursor=pointer]:
+                  - generic [ref=f19e183]:
+                    - generic [ref=f19e185]:
+                      - heading "Профили в социальных сетях" [level=3] [ref=f19e186]
+                      - button "\"Профили в социальных сетях\" – изменить" [ref=f19e187]
+                    - generic [ref=f19e190]: Добавить
+            - generic [ref=f19e191]:
+              - heading "Местоположение и районы" [level=2] [ref=f19e192]
+              - generic [ref=f19e193]:
+                - region [ref=f19e195] [cursor=pointer]:
+                  - generic [ref=f19e196]:
+                    - generic [ref=f19e198]:
+                      - heading "Адрес компании" [level=3] [ref=f19e199]
+                      - button "\"Адрес компании\" – изменить" [ref=f19e200]
+                    - generic [ref=f19e203]: Нет отделения, только бытовые услуги и доставка
+                - region [ref=f19e205] [cursor=pointer]:
+                  - generic [ref=f19e206]:
+                    - generic [ref=f19e208]:
+                      - heading "Территория обслуживания" [level=3] [ref=f19e209]
+                      - button "\"Территория обслуживания\" – изменить" [ref=f19e210]
+                    - list [ref=f19e214]:
+                      - listitem [ref=f19e215]:
+                        - generic "Carlow, Ireland" [ref=f19e216]: Carlow, Ireland
+                      - listitem [ref=f19e219]:
+                        - generic "Kildare, Ireland" [ref=f19e220]: Kildare, Ireland
+                      - listitem [ref=f19e223]:
+                        - generic "Kilkenny, Ireland" [ref=f19e224]: Kilkenny, Ireland
+                      - listitem [ref=f19e227]:
+                        - generic "Laois, Co. Laois, Ireland" [ref=f19e228]: Laois, Co. Laois, Ireland
+                      - listitem [ref=f19e231]:
+                        - generic "Portlaoise, Co. Laois, Ireland" [ref=f19e232]: Portlaoise, Co. Laois, Ireland
+            - generic [ref=f19e235]:
+              - heading "Часы работы" [level=2] [ref=f19e236]
+              - generic [ref=f19e237]:
+                - region [ref=f19e239] [cursor=pointer]:
+                  - generic [ref=f19e240]:
+                    - generic [ref=f19e242]:
+                      - heading "Часы работы" [level=3] [ref=f19e243]
+                      - button "\"Часы работы\" – изменить" [ref=f19e244]
+                    - generic [ref=f19e247]:
+                      - list [ref=f19e248]:
+                        - listitem [ref=f19e249]:
+                          - generic "Открыто с указанием часов работы" [ref=f19e250]
+                      - generic [ref=f19e252]:
+                        - generic [ref=f19e254]:
+                          - generic [ref=f19e255]: Воскресенье
+                          - list [ref=f19e257]:
+                            - listitem [ref=f19e258]:
+                              - generic "Круглосуточно" [ref=f19e259]: Круглосуточно
+                        - generic [ref=f19e263]:
+                          - generic [ref=f19e264]: Понедельник
+                          - list [ref=f19e266]:
+                            - listitem [ref=f19e267]:
+                              - generic "Круглосуточно" [ref=f19e268]: Круглосуточно
+                        - generic [ref=f19e272]:
+                          - generic [ref=f19e273]: Вторник
+                          - list [ref=f19e275]:
+                            - listitem [ref=f19e276]:
+                              - generic "Круглосуточно" [ref=f19e277]: Круглосуточно
+                        - generic [ref=f19e281]:
+                          - generic [ref=f19e282]: Среда
+                          - list [ref=f19e284]:
+                            - listitem [ref=f19e285]:
+                              - generic "Круглосуточно" [ref=f19e286]: Круглосуточно
+                        - generic [ref=f19e290]:
+                          - generic [ref=f19e291]: Четверг
+                          - list [ref=f19e293]:
+                            - listitem [ref=f19e294]:
+                              - generic "Круглосуточно" [ref=f19e295]: Круглосуточно
+                        - generic [ref=f19e299]:
+                          - generic [ref=f19e300]: Пятница
+                          - list [ref=f19e302]:
+                            - listitem [ref=f19e303]:
+                              - generic "Круглосуточно" [ref=f19e304]: Круглосуточно
+                        - generic [ref=f19e308]:
+                          - generic [ref=f19e309]: Суббота
+                          - list [ref=f19e311]:
+                            - listitem [ref=f19e312]:
+                              - generic "Круглосуточно" [ref=f19e313]: Круглосуточно
+                - region [ref=f19e317] [cursor=pointer]:
+                  - generic [ref=f19e318]:
+                    - generic [ref=f19e320]:
+                      - heading "Измененный график" [level=3] [ref=f19e321]
+                      - button "\"Измененный график\" – изменить" [ref=f19e322]
+                    - generic [ref=f19e325]: Добавить
+                - generic [ref=f19e332]:
+                  - heading "Добавить другие часы" [level=3] [ref=f19e335]
+                  - toolbar [ref=f19e336]:
+                    - button "Для пожилых покупателей" [ref=f19e339] [cursor=pointer]
+                    - button "Доставка" [ref=f19e344] [cursor=pointer]
+                    - button "Доступ" [ref=f19e349] [cursor=pointer]
+                    - button "Еда навынос" [ref=f19e354] [cursor=pointer]
+                    - button "Завтрак" [ref=f19e359] [cursor=pointer]
+                    - button "Кухня" [ref=f19e364] [cursor=pointer]
+                    - button "Обед" [ref=f19e369] [cursor=pointer]
+                    - button "Обслуживание за рулем" [ref=f19e374] [cursor=pointer]
+                    - button "Поздний завтрак" [ref=f19e379] [cursor=pointer]
+                    - button "Самовывоз" [ref=f19e384] [cursor=pointer]
+                    - button "Ужин" [ref=f19e389] [cursor=pointer]
+                    - button "Часы онлайн-обслуживания" [ref=f19e394] [cursor=pointer]
+                    - button "Часы скидок" [ref=f19e399] [cursor=pointer]
+            - generic [ref=f19e402]:
+              - heading "Ещё" [level=2] [ref=f19e403]
+              - generic [ref=f19e404]:
+                - region [ref=f19e406] [cursor=pointer]:
+                  - generic [ref=f19e407]:
+                    - generic [ref=f19e409]:
+                      - heading "О компании" [level=3] [ref=f19e410]
+                      - button "\"О компании\" – изменить" [ref=f19e411]
+                    - generic [ref=f19e414]: Добавить
+                - region [ref=f19e416] [cursor=pointer]:
+                  - generic [ref=f19e417]:
+                    - generic [ref=f19e419]:
+                      - heading "Посетители" [level=3] [ref=f19e420]
+                      - button "\"Посетители\" – изменить" [ref=f19e421]
+                    - generic [ref=f19e424]: Добавить
+                - region [ref=f19e426] [cursor=pointer]:
+                  - generic [ref=f19e427]:
+                    - generic [ref=f19e429]:
+                      - heading "Услуги" [level=3] [ref=f19e430]
+                      - button "\"Услуги\" – изменить" [ref=f19e431]
+                    - generic [ref=f19e434]: Добавить
+                - region [ref=f19e436] [cursor=pointer]:
+                  - generic [ref=f19e437]:
+                    - generic [ref=f19e439]:
+                      - heading "Экстренная помощь" [level=3] [ref=f19e440]
+                      - button "\"Экстренная помощь\" – изменить" [ref=f19e441]
+                    - generic [ref=f19e444]: Добавить
+            - generic [ref=f19e445]:
+              - generic [ref=f19e446]: Ознакомьтесь с тем, как Google собирает и использует информацию о компании.
+              - button "Подробнеео том, как Google собирает и использует информацию о компании" [ref=f19e449] [cursor=pointer]:
+                - generic [aria-hidden] [ref=f19e451]: Подробнее
