@@ -1,0 +1,496 @@
+<title>Вопросы Лёше</title>
+
+<style>
+  :root {
+    --ground: #F4F5F2;
+    --surface: #FFFFFF;
+    --surface-2: #EBEDE8;
+    --ink: #17211C;
+    --ink-2: #4A5751;
+    --ink-3: #7C8A83;
+    --line: #D6DAD3;
+    --accent: #B57503;
+    --wa: #17795E;
+    --wa-ink: #FFFFFF;
+    --done: #2E7D4F;
+    --shadow: 0 1px 2px rgba(23,33,28,.06), 0 8px 24px rgba(23,33,28,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #101512; --surface: #181E1A; --surface-2: #212925;
+      --ink: #E7EAE5; --ink-2: #AFBAB3; --ink-3: #7C8A83; --line: #2C3631;
+      --accent: #F0B429;
+      --wa: #2FA37D; --wa-ink: #06120E; --done: #63C08C;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #101512; --surface: #181E1A; --surface-2: #212925;
+    --ink: #E7EAE5; --ink-2: #AFBAB3; --ink-3: #7C8A83; --line: #2C3631;
+    --accent: #F0B429;
+    --wa: #2FA37D; --wa-ink: #06120E; --done: #63C08C;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 8.5rem;
+  }
+
+  .page {
+    max-width: 40rem; margin: 0 auto;
+    padding-inline: 1rem; padding-block: 1.75rem 2rem;
+    display: flex; flex-direction: column; gap: 1.5rem;
+  }
+
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 1.7rem; line-height: 1.2; margin: 0; font-weight: 600; text-wrap: balance; }
+  .lede { color: var(--ink-2); margin: 0; }
+  .rule { height: 3px; width: 3rem; background: var(--accent); border-radius: 2px; }
+  .label { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .7rem; letter-spacing: .13em; text-transform: uppercase; color: var(--ink-3); }
+
+  .progress-wrap { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--ground); padding-block: .6rem .5rem; display: flex; flex-direction: column; gap: .4rem; }
+  .bar { height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+  .bar span { display: block; height: 100%; width: 0%; background: var(--accent); border-radius: 99px; transition: width .25s ease; }
+  .progress-text { font-family: ui-monospace, Menlo, monospace; font-size: .78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; display: flex; justify-content: space-between; gap: .75rem; }
+  #sync[data-state="ok"] { color: var(--done); }
+
+  .block { display: flex; flex-direction: column; gap: .85rem; }
+  .block-head { display: flex; flex-direction: column; gap: .25rem; padding-top: .5rem; }
+  .block-head h2 { font-family: Georgia, serif; font-size: 1.15rem; margin: 0; font-weight: 600; }
+  .block-head p { margin: 0; color: var(--ink-2); font-size: .93rem; }
+  .block[data-urgent="1"] .block-head h2 { color: var(--accent); }
+
+  .q {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: .9rem 1rem 1rem; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: .6rem;
+  }
+  .q[data-filled="1"] { border-color: var(--done); }
+  .q-top { display: flex; gap: .6rem; align-items: baseline; }
+  .q-num { font-family: ui-monospace, Menlo, monospace; font-size: .8rem; color: var(--ink-3); flex: 0 0 auto; min-width: 1.4rem; }
+  .q-text { font-weight: 500; }
+  .q-hint { color: var(--ink-3); font-size: .86rem; margin: 0; padding-left: 2rem; }
+
+  input[type="text"], textarea {
+    width: 100%; max-width: 100%; font: inherit; color: var(--ink);
+    background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 9px; padding: .65rem .75rem; min-height: 2.9rem;
+  }
+  textarea { resize: vertical; min-height: 4.5rem; }
+  input[type="text"]:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+
+  .choices { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .choices button {
+    font: inherit; cursor: pointer; padding: .55rem .95rem; border-radius: 99px;
+    border: 1px solid var(--line); background: var(--surface-2); color: var(--ink-2);
+    min-height: 2.6rem;
+  }
+  .choices button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #17211C; font-weight: 600; }
+  .choices button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .actions {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 10;
+    background: var(--surface); border-top: 1px solid var(--line);
+    padding: .7rem 1rem calc(.7rem + env(safe-area-inset-bottom, 0px));
+    box-shadow: 0 -4px 20px rgba(0,0,0,.08);
+  }
+  .actions .inner { max-width: 40rem; margin: 0 auto; width: 100%; display: flex; gap: .6rem; flex-wrap: wrap; }
+  .btn {
+    font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 10px;
+    padding: .85rem 1rem; min-height: 3rem; display: inline-flex; align-items: center;
+    justify-content: center; gap: .45rem;
+  }
+  .btn-wa { background: var(--wa); color: var(--wa-ink); flex: 1 1 12rem; }
+  .btn-ghost { background: var(--surface-2); color: var(--ink); border: 1px solid var(--line); flex: 1 1 8rem; }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .toast {
+    position: fixed; left: 50%; transform: translateX(-50%); bottom: 8.5rem; z-index: 20;
+    background: var(--ink); color: var(--ground); padding: .6rem 1rem; border-radius: 99px;
+    font-size: .9rem; opacity: 0; pointer-events: none; transition: opacity .2s;
+    max-width: 90vw; text-align: center;
+  }
+  .toast[data-show="1"] { opacity: 1; }
+
+  .saved-note { color: var(--ink-3); font-size: .85rem; text-align: center; margin: 0; }
+
+  details.raw { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: .8rem 1rem; }
+  details.raw summary { cursor: pointer; font-weight: 500; }
+  details.raw pre {
+    margin: .8rem 0 0; padding: .8rem; background: var(--surface-2); border-radius: 9px;
+    overflow-x: auto; font-family: ui-monospace, Menlo, monospace; font-size: .8rem; line-height: 1.45;
+  }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="page">
+
+  <header style="display:flex;flex-direction:column;gap:.7rem">
+    <div class="label">Expert Fix Services</div>
+    <h1>Вопросы Лёше</h1>
+    <div class="rule"></div>
+    <p class="lede">
+      Всё, что осталось выяснить, — в одном месте. Отвечай сколько сможешь, ответы
+      сохраняются сами, можно закрыть и вернуться.
+      <b>Блок 1 — пять вопросов, на каждый хватит слова.</b> Остальное не горит.
+    </p>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="bar"><span id="bar"></span></div>
+    <div class="progress-text">
+      <span id="ptext">0 из 20</span>
+      <span id="sync">сохраняется на этом телефоне</span>
+    </div>
+  </div>
+
+  <main id="form"></main>
+
+  <details class="raw">
+    <summary>Показать ответы в JSON</summary>
+    <pre id="raw">{}</pre>
+  </details>
+
+  <p class="saved-note">Пересылать ничего не обязательно — ответы приходят мне сами.</p>
+</div>
+
+<div class="actions">
+  <div class="inner">
+    <button class="btn btn-wa" id="send">Отправить в WhatsApp</button>
+    <button class="btn btn-ghost" id="copy">Копировать</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function () {
+  var BLOCKS = [
+    {
+      key: "block1_now",
+      title: "Блок 1 — ответь словом",
+      note: "Пять вопросов. На каждый хватит одного слова, а решают они больше, чем всё остальное вместе.",
+      urgent: true,
+      qs: [
+        { id: "reviews", t: "Можно просить отзыв в Гугле у каждого клиента после работы?",
+          h: "Текст напишу я, тебе останется отправить его одним сообщением, когда закончишь объект. Сейчас у профиля ноль отзывов, и это главное, что мешает людям написать первыми.",
+          type: "choice", opts: ["Да", "Нет", "Напишу сам"] },
+        { id: "name_ok", t: "Название в Картах поменял на «Expert Fix Services». Нормально?",
+          h: "Было «Carlow / Leinster Handyman Services», и человек из Карт попадал на сайт с другим названием. Верну обратно за минуту, если скажешь.",
+          type: "choice", opts: ["Нормально", "Верни старое"] },
+        { id: "emergency", t: "Аварийные и срочные вызовы берёшь?",
+          h: "Важно: на сайте сейчас написано, что берём. Если это не так, уберу сегодня же — врать нельзя.",
+          type: "choice", opts: ["Беру", "Не беру", "Смотря что"] },
+        { id: "reply_time", t: "За сколько обычно отвечаешь на сообщение?",
+          h: "Назови время, которое выдержишь в плохой день, а не в хороший. Это первое, о чём думает человек, который пишет незнакомому мастеру.",
+          type: "text", ph: "напр. в течение часа / в тот же день" },
+        { id: "hours", t: "Часы работы — какие реальные?",
+          h: "В профиле стояло «круглосуточно», я это снял: обещать за тебя круглые сутки нельзя. Сейчас там просто «открыто», без часов. Скажешь реальные — поставлю.",
+          type: "text", ph: "напр. пн-сб 8:00-18:00" }
+      ]
+    },
+    {
+      key: "block2_prices",
+      title: "Блок 2 — три цены",
+      note: "Похоже, я неправильно записал. Все девять цен у меня помечены «только работа, материалы сверху». По мелким сходится, по этим трём вряд ли.",
+      qs: [
+        { id: "bathroom_scope", t: "Ванная под ключ €6 500 — это работа или всё вместе?",
+          h: "По ирландскому рынку ванная со всеми материалами стоит €6 500–12 000. Если €6 500 это всё вместе, цена ровно в рынке. Если только работа, то с материалами выйдет €11 000+, и я обязан написать это на сайте явно.",
+          type: "choice", opts: ["Только работа", "Всё вместе"] },
+        { id: "kitchen_scope", t: "Кухня под ключ €10 000 — работа или всё вместе?",
+          type: "choice", opts: ["Только работа", "Всё вместе"] },
+        { id: "facade_scope", t: "Покраска фасада €2 500 — работа или всё вместе?",
+          type: "choice", opts: ["Только работа", "Всё вместе"] }
+      ]
+    },
+    {
+      key: "block3_money",
+      title: "Блок 3 — деньги",
+      note: "На сайте написано, что депозит 30% есть. Что с ним дальше — не написано ничего, и придумывать я не буду.",
+      qs: [
+        { id: "deposit_threshold", t: "Депозит на мелких работах — сделать порог?",
+          h: "Сейчас у нас везде 30% вперёд. На штукатурке за €150 это €45 вперёд незнакомому человеку, на таких суммах люди пугаются и уходят. Предлагаю: до €300 без депозита, платят по факту; от €300 как сейчас.",
+          type: "choice", opts: ["Давай порог", "Нет, везде 30%", "Обсудим"] },
+        { id: "balance_when", t: "Когда берём оставшиеся 70%?",
+          h: "В день окончания работы? Так и напишу.",
+          type: "text", ph: "напр. в день окончания" },
+        { id: "cancellation", t: "Клиент отменил после того, как заплатил депозит — что с деньгами?",
+          h: "Возвращаешь целиком, оставляешь себе, делите? Как есть, так и напишу.",
+          type: "textarea", ph: "своими словами" }
+      ]
+    },
+    {
+      key: "block4_photos",
+      title: "Блок 4 — фото",
+      note: "По трём услугам, на которых ты больше всего зарабатываешь, у меня ноль кадров. В поиске человек видит одну фотографию и по ней решает, писать или нет. Описание он не читает вообще.",
+      qs: [
+        { id: "photos_plaster", t: "Штукатурка — 5 кадров, обязательно «до» и «после» одного места",
+          h: "Снимай с одной точки до и после, при дневном свете, горизонтально. Криво — нормально, главное чтобы было видно работу.",
+          type: "text", ph: "когда скинешь" },
+        { id: "photos_handyman", t: "Мелкий ремонт — 3 кадра",
+          h: "Собранная мебель, полка, смеситель, дверь — что угодно из обычного дня.",
+          type: "text", ph: "когда скинешь" },
+        { id: "photos_painting", t: "Покраска комнаты — 3 кадра, тоже «до» и «после»",
+          type: "text", ph: "когда скинешь" },
+        { id: "archive_year", t: "Фото из твоего старого архива — какого они года?",
+          h: "Без года я не могу подписать их «недавние работы», а подписывать неправдой не буду.",
+          type: "text", ph: "напр. 2019–2021" },
+        { id: "archive_consent", t: "Можно оставить старые фото с подписью «работы до переезда в Ирландию»?",
+          h: "Они уже опубликованы в таком виде. Нужно твоё подтверждение задним числом, иначе сниму.",
+          type: "choice", opts: ["Можно", "Убери"] }
+      ]
+    },
+    {
+      key: "block5_rest",
+      title: "Блок 5 — остальное",
+      note: "Не срочно, но это то, что спрашивают клиенты, а отвечаю им я.",
+      qs: [
+        { id: "electrician", t: "Электрика в ванной — есть свой электрик?",
+          h: "Сертифицированную электрику ты не берёшь. Значит либо подключаем твоего человека, либо я пишу клиенту, что эту часть он организует сам.",
+          type: "choice", opts: ["Есть свой", "Клиент сам", "Смотря что"] },
+        { id: "not_taking", t: "Что не берёшь вообще?",
+          h: "У меня записано: газ и электрика, которая требует сертификата. Что-то ещё?",
+          type: "textarea", ph: "перечисли" },
+        { id: "travel", t: "Как далеко реально ездишь?",
+          h: "На сайте написано «в пределах 150 км от Карлоу». Если на деле меньше — поправлю.",
+          type: "text", ph: "напр. до 60 км, дальше только большие объекты" },
+        { id: "capacity", t: "Сколько заявок в месяц реально потянешь?",
+          h: "Нет смысла разгонять поток, который ты не закроешь.",
+          type: "text", ph: "напр. 6–8" }
+      ]
+    }
+  ];
+
+  var STORE = "ef_anketa_2026_09";
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch (e) { state = {}; }
+
+  var total = 0;
+  BLOCKS.forEach(function (b) { total += b.qs.length; });
+
+  var form = document.getElementById("form");
+  var num = 0;
+
+  BLOCKS.forEach(function (block) {
+    var sec = document.createElement("section");
+    sec.className = "block";
+    if (block.urgent) sec.setAttribute("data-urgent", "1");
+
+    var head = document.createElement("div");
+    head.className = "block-head";
+    var h2 = document.createElement("h2");
+    h2.textContent = block.title;
+    head.appendChild(h2);
+    if (block.note) {
+      var p = document.createElement("p");
+      p.textContent = block.note;
+      head.appendChild(p);
+    }
+    sec.appendChild(head);
+
+    block.qs.forEach(function (q) {
+      num++;
+      var card = document.createElement("div");
+      card.className = "q";
+
+      var top = document.createElement("div");
+      top.className = "q-top";
+      var sn = document.createElement("span");
+      sn.className = "q-num";
+      sn.textContent = num + ".";
+      var st = document.createElement("span");
+      st.className = "q-text";
+      st.textContent = q.t;
+      top.appendChild(sn); top.appendChild(st);
+      card.appendChild(top);
+
+      if (q.h) {
+        var hint = document.createElement("p");
+        hint.className = "q-hint";
+        hint.textContent = q.h;
+        card.appendChild(hint);
+      }
+
+      if (q.type === "choice") {
+        var wrap = document.createElement("div");
+        wrap.className = "choices";
+        q.opts.forEach(function (opt, oi) {
+          var b = document.createElement("button");
+          b.type = "button";
+          b.id = "opt-" + q.id + "-" + oi;
+          b.textContent = opt;
+          b.setAttribute("aria-pressed", state[q.id] === opt ? "true" : "false");
+          b.addEventListener("click", function () {
+            var already = state[q.id] === opt;
+            state[q.id] = already ? "" : opt;
+            Array.prototype.forEach.call(wrap.children, function (c) {
+              c.setAttribute("aria-pressed", c === b && !already ? "true" : "false");
+            });
+            save(); mark(card, q.id); tick();
+          });
+          wrap.appendChild(b);
+        });
+        card.appendChild(wrap);
+      } else {
+        var el = document.createElement(q.type === "textarea" ? "textarea" : "input");
+        if (q.type !== "textarea") el.type = "text";
+        el.id = "f-" + q.id;
+        el.placeholder = q.ph || "";
+        el.value = state[q.id] || "";
+        el.addEventListener("input", function () {
+          state[q.id] = el.value;
+          save(); mark(card, q.id); tick();
+        });
+        card.appendChild(el);
+      }
+
+      mark(card, q.id);
+      sec.appendChild(card);
+    });
+
+    form.appendChild(sec);
+  });
+
+  function mark(card, id) {
+    card.setAttribute("data-filled", (state[id] || "").trim() ? "1" : "0");
+  }
+
+  function filledCount() {
+    var c = 0;
+    BLOCKS.forEach(function (b) {
+      b.qs.forEach(function (q) { if ((state[q.id] || "").trim()) c++; });
+    });
+    return c;
+  }
+
+  function tick() {
+    var c = filledCount();
+    document.getElementById("bar").style.width = Math.round((c / total) * 100) + "%";
+    document.getElementById("ptext").textContent = c + " из " + total;
+  }
+
+  function buildJSON() {
+    var data = {
+      form: "expert-fix-anketa",
+      date: "2026-09-20",
+      filled: filledCount(),
+      total: total,
+      updatedAt: new Date().toISOString(),
+      answers: {}
+    };
+    BLOCKS.forEach(function (b) {
+      var section = {};
+      b.qs.forEach(function (q) {
+        var v = (state[q.id] || "").trim();
+        section[q.id] = { question: q.t, answer: v || null };
+      });
+      data.answers[b.key] = section;
+    });
+    return data;
+  }
+
+  function renderRaw() {
+    document.getElementById("raw").textContent = JSON.stringify(buildJSON(), null, 2);
+  }
+
+  function buildText() {
+    var out = ["Ответы — Expert Fix", ""];
+    BLOCKS.forEach(function (b) {
+      var lines = [];
+      b.qs.forEach(function (q) {
+        var v = (state[q.id] || "").trim();
+        if (v) lines.push("• " + q.t + " — " + v);
+      });
+      if (lines.length) {
+        out.push(b.title.toUpperCase());
+        out = out.concat(lines);
+        out.push("");
+      }
+    });
+    out.push("Заполнено " + filledCount() + " из " + total);
+    return out.join("\n");
+  }
+
+  function toast(msg) {
+    var t = document.getElementById("toast");
+    t.textContent = msg;
+    t.setAttribute("data-show", "1");
+    setTimeout(function () { t.removeAttribute("data-show"); }, 2600);
+  }
+
+  // Сохранение идёт в два места. Локально — всегда, чтобы ответы пережили
+  // закрытую вкладку. В общую базу артефакта — если она доступна в этом
+  // просмотре: тогда ответы видны мне сразу и пересылать ничего не нужно.
+  // База может быть недоступна, поэтому кнопки WhatsApp и «Копировать»
+  // остаются на месте как запасной путь.
+  var dbRef = null;
+  var syncEl = document.getElementById("sync");
+  var timer = null;
+
+  function save() {
+    try { localStorage.setItem(STORE, JSON.stringify(state)); } catch (e) {}
+    renderRaw();
+    if (!dbRef) return;
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(push, 700);
+  }
+
+  function push() {
+    if (!dbRef) return;
+    dbRef.set(buildJSON()).then(function () {
+      syncEl.textContent = "сохранено, я это вижу";
+      syncEl.setAttribute("data-state", "ok");
+    }, function (err) {
+      syncEl.removeAttribute("data-state");
+      syncEl.textContent = "сохранено на этом телефоне";
+      var code = err && err.code;
+      if (code === "revoked" || code === "not_granted") dbRef = null;
+    });
+  }
+
+  if (window.claude && window.claude.use) {
+    window.claude.use("db").then(function (db) {
+      if (!db) return;
+      dbRef = db.doc("answers/lesha");
+      if (filledCount()) push();
+    }, function () {});
+  }
+
+  document.getElementById("send").addEventListener("click", function () {
+    if (!filledCount()) { toast("Сначала ответь хотя бы на один вопрос"); return; }
+    window.open("https://wa.me/?text=" + encodeURIComponent(buildText()), "_blank", "noopener");
+  });
+
+  document.getElementById("copy").addEventListener("click", function () {
+    var text = buildText();
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(
+        function () { toast("Скопировано"); },
+        function () { fallback(text); }
+      );
+    } else { fallback(text); }
+  });
+
+  function fallback(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); toast("Скопировано"); }
+    catch (e) { toast("Не вышло скопировать — выдели вручную в блоке ниже"); }
+    document.body.removeChild(ta);
+  }
+
+  tick();
+  renderRaw();
+})();
+</script>
