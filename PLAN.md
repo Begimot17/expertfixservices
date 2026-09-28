@@ -187,6 +187,39 @@ x-powered-by: Hostinger Horizons
 - **Отзывы не покупаем и не пишем.** Единственный путь — попросить у первых реальных
   клиентов.
 
+## Часть 7 · Бесплатные шаги 28.09.2026
+
+- **Google Ads поставлен на паузу.** Аккаунт `229-754-1152` привязан к профилю Карт, заведён
+  не нами: «Search-1» (€5/день, поиск, старый текст с «Free Quote», «Tiling», «Businesses»)
+  и «Handyman Services Near You» (PMax, €10.10/день, без групп объектов). За 30.08–26.09
+  ноль показов и €0. Обе кампании на паузе, бюджет аккаунта €0/день. Остаток предоплаты
+  **€30** (внесено 16.08, Visa •••• 0006) — пригодится для своей кампании в этом же аккаунте.
+- **Сайт.** На `/work` 12 новых кадров (штукатурка, шпаклёвка, покраска, кухня, столярка),
+  пара «шпаклёвка до/после» первой на главной. Подписи — только то, что в кадре, без места
+  и даты: это решение уже было в `site/apps/web/src/lib/content/work.js`, и оно честнее
+  подписи «до переезда». Выложено, проверено на бою.
+- **Зоны обслуживания в Картах** — на модерации: убраны Dublin и целые графства Kildare и
+  Laois; стоят Carlow, Tullow, Muine Bheag (Bagenalstown), Athy, Baltinglass, Castlecomer,
+  Kilkenny, Portlaoise, Newbridge, Naas. Graiguecullen в Google нет (покрыт Carlow), Kildare
+  town выдаётся только как графство — не добавлен. Tullow и Baltinglass Google записал как
+  «Tullowphelim, Tullow» и «Baltinglass East» — это те же города.
+- **Фото в Карты:** 36 новых кадров, в профиле теперь 48, почти все «на проверке». Не
+  загружены: «Покраска 2» №5 и «Покраска 3» №4 (смаз, засвет), «Сборка мебели 5» (старая
+  кухня — непонятно, «до» ли это).
+- **Публикации в Картах:** 28.09 вышла «Wall skimming, before and after» с кнопкой на `/work`.
+  Вторая — про кухню — поставлена на 05.10 09:00, но в списке не видна; **05.10 проверить**,
+  и если не вышла, опубликовать вручную:
+  > Kitchen fitting: units, worktop, built-in oven and hob, under-cabinet lighting, with the
+  > fridge-freezer and dishwasher fitted behind matching doors. Fitting a kitchen you have
+  > already bought starts from €2,500, labour only. Send photos of the room on WhatsApp and
+  > you get a written price back.
+  Фото — `site/apps/web/public/gallery/kitchen-fitted-01.jpg`. Дальше — по одной в неделю.
+- **Каталог WhatsApp не сделан.** WhatsApp Web разлогинен: связанное устройство отвалилось.
+  Нужен телефон Алексея — Настройки → Связанные устройства → отсканировать QR.
+- **Не тронуто, требует решения:** старая публикация «Plastering in Carlow — before and
+  after» и подпись на главной `Bathroom finished · Carlow` (`home.js`, `hero.plate`) называют
+  место для кадров, которые по розеткам — архив до переезда.
+
 ## Часть 6 · Когда можно включать рекламу
 
 Не раньше, чем выполнены все четыре пункта:
