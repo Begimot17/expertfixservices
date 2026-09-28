@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review card</title>
+<!--
+  Карточка для клиента: Алексей оставляет её в день окончания работы.
+  Печать: A4, четыре карточки A6 на лист, резать по серым линиям.
+  QR ведёт прямо в окно отзыва Google (ссылка из профиля, 26.09.2026).
+
+  Текст нейтральный намеренно: правила Google запрещают просить отзыв
+  только у довольных клиентов, поэтому никакого «если всё понравилось».
+  Скидок и бонусов за отзыв тоже нет — это нарушение тех же правил.
+-->
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: #1e2422; }
+  body { font-family: Georgia, "Times New Roman", serif; }
+  .sheet { width: 210mm; height: 297mm; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+  .card { border: 0.2mm dashed #c9ccc8; padding: 12mm 11mm; display: flex; flex-direction: column; }
+  .brand { font-family: Arial, Helvetica, sans-serif; font-weight: 700; font-size: 11pt; letter-spacing: 0.02em; color: #3b5a3f; }
+  .brand small { display: block; font-weight: 400; font-size: 8pt; color: #5b645f; letter-spacing: 0.08em; text-transform: uppercase; }
+  h1 { font-size: 17pt; line-height: 1.15; margin: 7mm 0 3mm; font-weight: 700; }
+  p { font-size: 10pt; line-height: 1.45; margin: 0 0 3mm; }
+  .qr { margin-top: auto; display: flex; gap: 5mm; align-items: flex-end; }
+  .qr svg { width: 34mm; height: 34mm; flex: none; }
+  .qr .hint { font-family: Arial, Helvetica, sans-serif; font-size: 8pt; color: #5b645f; line-height: 1.4; }
+  .qr .hint b { color: #1e2422; }
+  .foot { font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt; color: #5b645f; margin-top: 4mm; border-top: 0.2mm solid #dde0dc; padding-top: 2.5mm; }
+  @media screen { body { background: #eceae4; padding: 16px; } .sheet { background: #fff; margin: 0 auto; box-shadow: 0 1px 6px rgba(0,0,0,.15); max-width: 100%; } }
+</style>
+</head>
+<body>
+<div class="sheet" id="sheet"></div>
+
+<template id="card">
+  <div class="card">
+    <div class="brand">Expert Fix Services<small>Carlow</small></div>
+    <h1>Thank you — how did the job go?</h1>
+    <p>A short Google review, good or not, tells the next person what to expect. It takes about a minute, and it helps a small local trade more than anything else.</p>
+    <p>If something isn't right with the work, message us on WhatsApp — it's covered by the 6-month guarantee.</p>
+    <div class="qr">
+      <span class="code"></span>
+      <div class="hint"><b>Scan with your phone camera</b><br>opens the review window<br>on Google directly</div>
+    </div>
+    <div class="foot">WhatsApp +353 89 983 1680 · expertfixservices.com</div>
+  </div>
+</template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+  var REVIEW_URL = 'https://g.page/r/CQtypMcB21OmECE/review';
+  var qr = qrcode(0, 'M');
+  qr.addData(REVIEW_URL);
+  qr.make();
+  var svg = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
+  var sheet = document.getElementById('sheet');
+  var tpl = document.getElementById('card');
+  for (var i = 0; i < 4; i++) {
+    var node = tpl.content.cloneNode(true);
+    node.querySelector('.code').innerHTML = svg;
+    sheet.appendChild(node);
+  }
+</script>
+</body>
+</html>
