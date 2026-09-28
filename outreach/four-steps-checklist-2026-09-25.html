@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Четыре шага до рекламы</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --bg:#f6f5f2;
+    --surface:#ffffff;
+    --text:#1e2422;
+    --text-muted:#5b645f;
+    --border:#dde0dc;
+    --accent:#0f6e5c;
+    --accent-soft:#e3f1ec;
+    --blocker:#b45309;
+    --blocker-soft:#faf1e4;
+    --mono-bg:#f0efe9;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14181a;
+      --surface:#1c2225;
+      --text:#e8ece9;
+      --text-muted:#9aa39d;
+      --border:#2c3437;
+      --accent:#35c9a1;
+      --accent-soft:rgba(53,201,161,.12);
+      --blocker:#f0a848;
+      --blocker-soft:rgba(240,168,72,.12);
+      --mono-bg:#20272a;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14181a;
+    --surface:#1c2225;
+    --text:#e8ece9;
+    --text-muted:#9aa39d;
+    --border:#2c3437;
+    --accent:#35c9a1;
+    --accent-soft:rgba(53,201,161,.12);
+    --blocker:#f0a848;
+    --blocker-soft:rgba(240,168,72,.12);
+    --mono-bg:#20272a;
+    color-scheme:dark;
+  }
+
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"IBM Plex Sans",-apple-system,system-ui,sans-serif;
+    padding-inline:16px;
+    padding-block:32px;
+  }
+  code{font-family:"IBM Plex Mono",ui-monospace,monospace}
+  .wrap{max-width:720px;margin-inline:auto}
+
+  header{margin-bottom:28px}
+  h1{
+    font-size:1.7rem;
+    line-height:1.15;
+    margin:0 0 6px;
+    text-wrap:balance;
+    letter-spacing:-.01em;
+  }
+  .sub{color:var(--text-muted);font-size:.95rem;margin:0}
+  .meta{
+    display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+    margin-top:14px;font-family:"IBM Plex Mono",monospace;
+    font-size:.75rem;color:var(--text-muted);
+  }
+  .meta .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
+
+  .rule{
+    border:1px solid var(--border);
+    background:var(--surface);
+    border-radius:10px;
+    padding:14px 16px;
+    margin-bottom:24px;
+    font-size:.9rem;
+    color:var(--text-muted);
+  }
+  .rule b{color:var(--text)}
+
+  .steps{display:flex;flex-direction:column;gap:16px}
+
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:18px 20px 20px;
+  }
+  .card.done{opacity:.55}
+  .card.done .num{background:var(--accent);color:#fff}
+
+  .card-top{
+    display:flex;align-items:flex-start;gap:12px;margin-bottom:10px;
+  }
+  .num{
+    font-family:"IBM Plex Mono",monospace;
+    font-weight:600;
+    width:28px;height:28px;flex:none;
+    border-radius:50%;
+    background:var(--accent-soft);
+    color:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    font-size:.85rem;
+  }
+  .card-head{flex:1;min-width:0}
+  .card h2{font-size:1.05rem;margin:0 0 4px;line-height:1.3}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+  .tag{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.68rem;
+    letter-spacing:.02em;
+    padding:2px 8px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    color:var(--text-muted);
+  }
+  .tag.who{background:var(--accent-soft);color:var(--accent);border-color:transparent}
+  .tag.blocker{background:var(--blocker-soft);color:var(--blocker);border-color:transparent}
+
+  .check{
+    flex:none;
+    width:22px;height:22px;
+    border-radius:6px;
+    border:1.5px solid var(--border);
+    background:transparent;
+    cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--accent);
+  }
+  .check[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+  .check svg{width:13px;height:13px;visibility:hidden}
+  .check[aria-pressed="true"] svg{visibility:visible}
+
+  .body p{margin:0 0 10px;font-size:.92rem;line-height:1.5}
+  .body p:last-child{margin-bottom:0}
+
+  .copybox{
+    position:relative;
+    background:var(--mono-bg);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:12px 44px 12px 14px;
+    margin:10px 0;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.8rem;
+    line-height:1.55;
+    white-space:pre-wrap;
+  }
+  .copybtn{
+    position:absolute;top:8px;right:8px;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.65rem;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text-muted);
+    border-radius:6px;
+    padding:4px 7px;
+    cursor:pointer;
+  }
+  .copybtn:hover{color:var(--text)}
+
+  .link{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.8rem;
+    word-break:break-all;
+    color:var(--accent);
+  }
+
+  footer{
+    margin-top:28px;
+    padding-top:16px;
+    border-top:1px solid var(--border);
+    color:var(--text-muted);
+    font-size:.82rem;
+  }
+  footer p{margin:0 0 6px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>Четыре шага до рекламы</h1>
+    <p class="sub">Техническая часть закрыта. Осталось это — и ни один пункт не про код.</p>
+    <div class="meta"><span class="dot"></span>25.09.2026 · Никита + Лёха</div>
+  </header>
+
+  <div class="rule">
+    Порядок = приоритет. <b>Фото — первым</b>, они единственное, что блокирует рекламу
+    и каталог WhatsApp. Остальное можно параллельно.
+  </div>
+
+  <div class="steps">
+
+    <div class="card" id="c1">
+      <div class="card-top">
+        <div class="num">1</div>
+        <div class="card-head">
+          <h2>Прислать три набора фото</h2>
+          <div class="tags">
+            <span class="tag who">Лёха</span>
+            <span class="tag blocker">ждёт разбора</span>
+          </div>
+        </div>
+        <button class="check" aria-pressed="false" data-card="c1" aria-label="Отметить сделанным">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="body">
+        <p>Нужно было с телефона, без обработки:</p>
+        <p>
+          — штукатурка: 5 кадров, обязательно «до» и «после» одного и того же места<br>
+          — мелкий ремонт: 3 кадра<br>
+          — покраска комнаты: 3 кадра, тоже «до» и «после»
+        </p>
+        <p>«До и после» — не по вкусу, а по делу: готовая стена без исходной ничего не доказывает.</p>
+        <p><b>Лёха загрузил 26.09 в Google Диск.</b> Просьба от него: использовать все фото по порядку, ничего не пропускать. Осталось: получить ссылку на папку и разложить фото по профилю и каталогу WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c2">
+      <div class="card-top">
+        <div class="num">2</div>
+        <div class="card-head">
+          <h2>Поставить приветствие и сообщение вне часов</h2>
+          <div class="tags">
+            <span class="tag who">Лёха</span>
+            <span class="tag">2 минуты, телефон</span>
+          </div>
+        </div>
+        <button class="check" aria-pressed="false" data-card="c2" aria-label="Отметить сделанным">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="body">
+        <p>Приложение WhatsApp Business → Настройки → Инструменты для бизнеса → Приветственное сообщение:</p>
+        <div class="copybox" id="txt2a">Hi, thanks for messaging Expert Fix Services. Send a photo of the job, what needs doing, and your area, and we'll come back with a price in writing — usually within the hour (7am–10pm, every day).<button class="copybtn" data-copy="txt2a">копировать</button></div>
+        <p>Там же → Сообщение об отсутствии:</p>
+        <div class="copybox" id="txt2b">Thanks for your message — we're off the tools right now, back online at 7am. Send a photo and the details now and you'll have a price waiting for you when we're back.<button class="copybtn" data-copy="txt2b">копировать</button></div>
+      </div>
+    </div>
+
+    <div class="card" id="c3">
+      <div class="card-top">
+        <div class="num">3</div>
+        <div class="card-head">
+          <h2>Просить отзыв у каждого клиента</h2>
+          <div class="tags">
+            <span class="tag who">Лёха</span>
+            <span class="tag">в день окончания работы</span>
+          </div>
+        </div>
+        <button class="check" aria-pressed="false" data-card="c3" aria-label="Отметить сделанным">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="body">
+        <p>Ссылка открывает окно отзыва сразу, без поиска:</p>
+        <div class="copybox" id="txt3link">https://g.page/r/CQtypMcB21OmECE/review<button class="copybtn" data-copy="txt3link">копировать</button></div>
+        <p>Текст клиенту, в WhatsApp:</p>
+        <div class="copybox" id="txt3msg">Спасибо, что доверили работу. Если всё устроило — оставьте, пожалуйста, короткий отзыв, это очень помогает. Одна ссылка, минута: https://g.page/r/CQtypMcB21OmECE/review<button class="copybtn" data-copy="txt3msg">копировать</button></div>
+        <p>699 просмотров профиля за полгода, отзывов — 0. Самый дорогой пункт из всех.</p>
+      </div>
+    </div>
+
+    <div class="card" id="c4">
+      <div class="card-top">
+        <div class="num">4</div>
+        <div class="card-head">
+          <h2>Решить про название в Картах</h2>
+          <div class="tags">
+            <span class="tag who">Применено 28.09</span>
+          </div>
+        </div>
+        <button class="check" aria-pressed="true" data-card="c4" aria-label="Отметить сделанным">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="body">
+        <p>Статистика профиля апрель–сентябрь: 81 поисковый показ, все по «handyman carlow» и вариантам. По «Expert Fix Services» — 0.</p>
+        <p>Решено: <b>«Expert Fix Services — Handyman Carlow»</b>. Название отправлено на смену 26.09 через профиль (аккаунт nikitadyachkovchik@gmail.com) — Google показывает «на рассмотрении», проверка обычно занимает до 10 минут.</p>
+        <p>Проверено 28.09: в публичной выдаче Google Maps профиль показывается как «Expert Fix Services — Handyman Carlow», модерация пройдена.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p><b>Плюс, без карточки:</b> подтвердить, что тестовое письмо «Deploy Check» дошло на <span class="link" style="display:inline">info@expertfixservices.com</span>.</p>
+    <p>Источник — <code>PLAN.md</code>, часть 9 и «Ближайший шаг».</p>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  function load(id){
+    try{ return localStorage.getItem('efs-step-'+id) === '1'; }catch(e){ return false; }
+  }
+  function save(id, val){
+    try{ localStorage.setItem('efs-step-'+id, val ? '1' : '0'); }catch(e){}
+  }
+  document.querySelectorAll('.check').forEach(function(btn){
+    var id = btn.dataset.card;
+    var card = document.getElementById(id);
+    function apply(done){
+      btn.setAttribute('aria-pressed', done ? 'true' : 'false');
+      card.classList.toggle('done', done);
+    }
+    apply(load(id));
+    btn.addEventListener('click', function(){
+      var next = btn.getAttribute('aria-pressed') !== 'true';
+      apply(next);
+      save(id, next);
+    });
+  });
+
+  document.querySelectorAll('.copybtn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var box = document.getElementById(btn.dataset.copy);
+      var text = box.textContent.replace(/копировать\s*$/,'').trim();
+      var done = function(){
+        var old = btn.textContent;
+        btn.textContent = 'готово';
+        setTimeout(function(){ btn.textContent = old; }, 1200);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done).catch(function(){
+          selectFallback(box, btn, done);
+        });
+      } else {
+        selectFallback(box, btn, done);
+      }
+    });
+  });
+
+  function selectFallback(box, btn, done){
+    try{
+      var range = document.createRange();
+      range.selectNodeContents(box);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      done();
+    }catch(e){}
+  }
+})();
+</script>
+
+</body>
+</html>
