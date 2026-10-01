@@ -1,5 +1,11 @@
 # Carlow Handyman ищет преемника — разбор и черновик письма
 
+> **✅ Отправлено 01.10.2026** через форму `carlowhandyman.ie/work-with-us/`: интерес Partnership,
+> имя «Alex (Expert Fix Services)», телефон +353 89 983 1680, email info@expertfixservices.com,
+> текст — черновик ниже без темы. Сайт ответил «Thank you for your message. It has been sent».
+> Ответ придёт на info@ или в WhatsApp. Письмо на hello@ не отправлялось (нет доступа к ящику
+> info@; дублировать ту же форму письмом не обязательно).
+
 30.09.2026. Проверено на их сайте в этот день.
 
 ## Что они пишут
