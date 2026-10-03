@@ -273,6 +273,15 @@ x-powered-by: Hostinger Horizons
   - 4 товара: Plaster repairs, Room painting, Fitted wardrobes and shelving, Kitchen fitting —
     цены «from» в описании, пометка «до переезда в Ирландию» про фото;
   - ссылка для записи → `/contact`; атрибут «владелец — женщина: нет».
+  - **Сайт, выложено 03.10** (site `c9ffc89`, release `1700b68`): текст каждой страницы
+    теперь в самом HTML (SSR-сборка при релизе, `main.jsx` гидратирует), `/ga/*` и
+    неизвестные адреса — пустая оболочка `app.html`. 6 страниц работ: `/tv-wall-mounting-carlow`,
+    `/shelf-installation-carlow`, `/curtain-pole-installation-carlow`,
+    `/flat-pack-assembly-carlow`, `/wall-crack-repair-carlow`, `/room-painting-carlow` —
+    в подвале и в `sitemap.xml` (16 URL). На бою: все 200, H1 в сыром HTML, без ошибок
+    гидратации. Откат — команда в выводе `npm run deploy`.
+    Следующее по сайту: страницы городов Tullow, Bagenalstown, Athy — только с правдивым
+    текстом про сам город (`geo.js`).
   - **Осталось за Алексеем:** месяц открытия в 2025 (Google без месяца не принимает),
     ссылка на Facebook, решение по атрибуту «Подходит для ЛГБТК+». Телефон не ставим —
     звонков нет (`FACTS.md`).
