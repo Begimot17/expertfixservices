@@ -280,8 +280,8 @@ x-powered-by: Hostinger Horizons
     `/flat-pack-assembly-carlow`, `/wall-crack-repair-carlow`, `/room-painting-carlow` —
     в подвале и в `sitemap.xml` (16 URL). На бою: все 200, H1 в сыром HTML, без ошибок
     гидратации. Откат — команда в выводе `npm run deploy`.
-    Следующее по сайту: страницы городов Tullow, Bagenalstown, Athy — только с правдивым
-    текстом про сам город (`geo.js`).
+    **Выложено 03.10 вторым релизом** (site `c37a9ed`): `/handyman-tullow`,
+    `/plastering-bagenalstown`, `/handyman-athy` — у каждой свой текст про город. 19 URL.
   - **Осталось за Алексеем:** месяц открытия в 2025 (Google без месяца не принимает),
     ссылка на Facebook, решение по атрибуту «Подходит для ЛГБТК+». Телефон не ставим —
     звонков нет (`FACTS.md`).
