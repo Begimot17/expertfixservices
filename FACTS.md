@@ -78,7 +78,8 @@
 | GitHub | `github.com/ExpertFixServicesAdmin/ExpertFixServices` | Доступ выдан на аккаунт `nikitadyachkov` (почта nikitadyachkovchik@gmail.com), а не на рабочий `nikita-dyachkov`. Для работы нужен вход под тем аккаунтом. |
 | Google Business Profile | **«Expert Fix Services — Handyman Carlow»** (с 26.09.2026) | Доступ менеджера есть с `nikitadyachkovchik@gmail.com`. Метка подтверждена. |
 | Google Ads | аккаунт `229-754-1152`, привязан к профилю | Заведён не нами. Обе кампании на паузе с 28.09, баланс предоплаты €30. |
-| Аналитика | GTM `GTM-TCQ9S3W4` → GA4 `G-YGJ8JH080S` | На боевом сайте с 28.09, только после согласия на cookies. |
+| Аналитика | GTM `GTM-TCQ9S3W4` → GA4 `G-YGJ8JH080S` (аккаунт GA4 `409696681`) | На боевом сайте с 28.09, только после согласия на cookies. Создано на `nikitadyachkovchik@gmail.com`. 04.10 Алексей (`anonim10012007@gmail.com`) добавлен в GTM; в GA4 — ещё нет. Второй тег на сайт не ставить — будет двойной счёт. |
+| Google-аккаунт Алексея | `anonim10012007@gmail.com` | Основной владелец профиля в Картах. |
 
 ## ✅ Закрыто 21.09.2026: три цены — «всё включено»
 
