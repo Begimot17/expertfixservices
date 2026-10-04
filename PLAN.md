@@ -267,7 +267,8 @@ x-powered-by: Hostinger Horizons
 - **Профиль дополнен 03.10:**
   - зона обслуживания расширена с 10 городов до 19 зон: графства Carlow, Kilkenny, Kildare,
     Laois, Wicklow, Wexford, Waterford, Offaly, Tipperary, Dublin плюс 9 городов (город Carlow
-    Google поглотил графством). На проверке. Место в выдаче считается от адреса, не от зоны;
+    Google поглотил графством). **04.10 проверено: все 19 в профиле, пометки «на проверке» нет,
+    на карте в панели контур от Дублина до Уотерфорда.** Место в выдаче считается от адреса, не от зоны;
   - логотип (`assets/brand/logo-720.jpg`, как значок сайта) и обложка
     (`assets/brand/cover-700x394.jpg`, кухня, кадр без европейской розетки);
   - 4 товара: Plaster repairs, Room painting, Fitted wardrobes and shelving, Kitchen fitting —
